@@ -1,0 +1,29 @@
+.about {
+	padding: 8rem;
+	
+	@include respond(tab-port) {
+		padding: 20rem 4rem 0 4rem;
+	}
+	&__container {
+		background-color: $color-white;
+		padding: 3rem 5rem;
+		box-shadow: 0 1rem 4rem rgba($color-black, .2);
+		border-radius: $default-border-radius;
+		transform: skew(-10deg);
+		
+		@include respond(tab-port) {
+			transform: skew(0);
+		}
+	}
+
+	&__text {
+		font-size: $default-font-size;
+		margin-bottom: 1rem;
+		transform: skew(10deg);
+		
+		@include respond(tab-port) {
+			transform: skew(0);
+			font-size: 1.8rem;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+.contact {
+
+	&__button {
+		position: fixed;
+		top: 1.5rem;
+		right: 10rem;
+		z-index: 1000;
+		cursor: pointer;
+		
+		@include respond(tab-land) {
+			top: 1.5rem;
+			right: 7.5rem;
+		}
+		@include respond(tab-port) {
+			top: 3.5rem;
+			right: 1.5rem;
+		}
+	}
+
+	&__icon {
+		height: 5rem;
+
+		&--main {
+			color: $color-primary;
+			fill: currentColor;
+			@include respond(tab-port) {
+				color: $color-secondary;
+			}
+		}
+
+		&--sub {
+			color: $color-secondary;
+			fill: currentColor;
+			@include respond(tab-port) {
+				color: $color-primary-dark;
+			}
+		}
+	}
+
+	&__list-box {
+		position: fixed;
+		top: 3.5rem;
+		right: 10rem;
+		z-index: 1000;
+		opacity: 0;
+		transform: scale(0);
+		transform-origin: top;
+		transition: all .7s;
+		
+		@include respond(tab-land) {
+			right: 7.5rem;
+		}
+		@include respond(tab-port) {
+			right: .5rem;
+			padding: 1rem;
+			background-color: rgba($color-white, .4);
+		}
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__link {
+		
+	}
+}

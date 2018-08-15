@@ -1,0 +1,29 @@
+.footer {
+	background-color: $color-gray-dark-3;
+	text-align: center;
+	padding: 4rem;
+
+	&__content {
+		width: 50rem;
+		display: inline-block;
+		border-top: 1px solid $color-gray-light-1;
+		padding-top: 2rem;
+		font-size: 1.5rem;
+	}
+	
+	&__logo {
+		height: 6rem;
+	}
+
+	&__text {
+		color: $color-gray-light-1;
+	}
+	
+	&__link {
+		&:link, &:visited {
+			color: $color-gray-light-1;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+}

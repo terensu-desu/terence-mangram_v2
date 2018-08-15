@@ -1,0 +1,82 @@
+.card {
+	flex: 0 0 45%;
+	margin-bottom: 4rem;
+	border-radius: $default-border-radius;
+	box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+	@include respond(tab-port) {
+		flex: 0 0 90%;
+	}
+
+	&__title-box {
+		background-color: $color-gray-light-2;
+		text-align: center;
+	}
+
+	&__title {
+		color: $color-secondary-light;
+		font-size: 2.5rem;
+		font-weight: 400;
+		padding: 1rem;
+	}
+
+	&__video-box {
+		position: relative;
+		overflow: hidden;
+		padding-top: 56.25%;
+	}
+
+	&__video {
+		position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+	}
+
+	&__description-box {
+		background-color: $color-white;
+		padding: 2rem;
+	}
+
+	&__description-text {
+		font-size: $default-font-size;
+		@include respond(tab-port) {
+			font-size: 1.8rem;
+		}
+	}
+
+	&__detail-box {
+		background-color: $color-white;
+		font-size: 1.5rem;
+	}
+
+	&__details {
+		width: 100%;
+		padding: .5rem 2rem;
+		border-top: 1px solid $color-gray-light-2;
+		text-align: center;
+	}
+
+	&__detail-text {
+		font-size: 1.5rem;
+		font-weight: 600;
+		@include respond(tab-port) {
+			font-size: 1.7rem;
+		}
+	}
+
+	&__detail-link {
+		&:link, &:visited {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $color-secondary;
+			font-size: 1.6rem;
+
+			@include respond(tab-port) {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}

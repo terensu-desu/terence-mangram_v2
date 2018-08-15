@@ -1,0 +1,25 @@
+.portfolio {
+	padding: 8rem 2rem;
+	
+	@include respond(tab-port) {
+		padding: 20rem 0 0 0;
+	}
+	&__header-box {
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	&__header {
+		display: inline-block;
+		font-size: $default-header-size;
+		border-bottom: 1px solid $color-gray-dark-1;
+		width: 66%;
+	}
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+}

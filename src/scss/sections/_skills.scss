@@ -1,0 +1,77 @@
+.skills {
+	padding: 8rem;
+
+	@include respond(tab-port) {
+		padding: 20rem 4rem 0 4rem;
+	}
+	&__header-box {
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	&__header {
+		display: inline-block;
+		font-size: $default-header-size;
+		border-bottom: 1px solid $color-gray-dark-1;
+		width: 66%;
+	}
+
+	&__container {
+		background-color: $color-white;
+		border-radius: $default-border-radius;
+		box-shadow: 0 1rem 4rem rgba($color-black, .2);
+		padding: 1rem 4rem 3rem 4rem;
+		@include respond(tab-port) {
+			padding: 1rem 2rem 3rem 2rem;
+		}
+	}
+
+	&__heading-box {
+		text-align: center;
+	}
+
+	&__heading-text {
+		display: inline-block;
+		width: 33%;
+		margin: 2rem 0;
+		border-bottom: 1px solid $color-secondary;
+		color: $color-secondary;
+		font-size: 2.5rem;
+		text-align: center;
+		text-transform: uppercase;
+
+		@include respond(tab-port) {
+			width: 40%;
+		}
+	}
+
+	&__skill-list {
+		list-style: none;
+		text-align: center;
+	}
+
+	&__skill {
+		display: inline-block;
+		text-align: center;
+
+		&:not(:last-child) {
+			margin-right: 3rem;
+		}
+	}
+
+	&__link {
+		&:link, &:visited {
+			text-decoration: none;
+			color: $color-gray-dark-1;
+		}
+	}
+
+	&__image {
+		height: 7rem;
+	}
+
+	&__caption {
+		font-size: $default-font-size;
+		font-weight: 600;
+	}
+}
