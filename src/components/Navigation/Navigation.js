@@ -1,5 +1,6 @@
 import React from "react";
 
+import Link from "../Link";
 import Logo from "../../assets/images/logo.png";
 
 const Navigation = props => {
@@ -11,29 +12,21 @@ const Navigation = props => {
 				</div>
 				<ul className="navigation__list">
 					<li className="navigation__item">
-						<a href="#about" className="navigation__link">
-							About
-						</a>
+						<Link name="about" />
 					</li>
 					<li className="navigation__item">
-						<a href="#portfolio" className="navigation__link">
-							Portfolio
-						</a>
+						<Link name="portfolio" />
 					</li>
 					<li className="navigation__item">
-						<a href="#skills" className="navigation__link">
-							Skills
-						</a>
+						<Link name="skills" />
 					</li>
 					<li className="navigation__item">
-						<a href="#resume" className="navigation__link">
-							Resume
-						</a>
+						<Link name="resume" />
 					</li>
 					<li className="navigation__item navigation__item--contact">
-						<a href="#!" className="navigation__link" onClick={props.handleClick}>
+						<button className="navigation__link" onClick={props.handleClick}>
 							Contact
-						</a>
+						</button>
 					</li>
 				</ul>
 			</nav>
