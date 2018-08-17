@@ -56,32 +56,41 @@
 
 	&__item {
 		display: inline-block;
-		font-size: 1.5rem;
-		padding: 2.5rem;
 		height: 100%;
 		&:last-child {
 			margin-right: 1rem;
 		}
-		&:hover {
-			background-color: rgba($color-primary-light, .5);
-		}
-		@include respond(tab-port) {
-			margin-top: .5rem;
-			font-size: 1.7rem;
-			padding: 1.5rem;
-		}
-		@include respond(phone) {
-			margin-top: .5rem;
-			padding: 1rem;
-		}
 	}
 
 	&__link {
-		&:link, &:visited {
+		&, &:link, &:visited {
+			display: inline-block;
+			border: none;
+			background: none;
+			padding: 2.5rem;
+			font-size: 1.5rem;
 			height: 100%;
 			text-transform: uppercase;
 			text-decoration: none;
 			color: $color-white;
+
+			@include respond(tab-port) {
+				margin-top: .5rem;
+				font-size: 1.7rem;
+				padding: 1.5rem;
+			}
+			@include respond(phone) {
+				margin-top: .5rem;
+				padding: 1rem;
+			}
+		}
+		
+		&:hover {
+			background-color: rgba($color-primary-light, .5);
+		}
+		
+		&--active {
+			background-color: rgba($color-primary-light, .5) !important;
 		}
 	}
 }
