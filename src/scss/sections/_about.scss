@@ -26,4 +26,29 @@
 			font-size: 1.8rem;
 		}
 	}
+
+	&__links-box {
+		text-align: center;
+		padding: 1rem;
+		list-style: none;
+
+	}
+
+	&__item {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+
+	&__icon {
+		height: 6rem;
+		transform: skew(10deg);
+		fill: currentColor;
+		color: $color-primary;
+
+		@include respond(tab-port) {
+			transform: skew(0);
+		}
+	}
 }
