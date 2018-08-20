@@ -8,6 +8,8 @@ import Portfolio from "./components/Portfolio/";
 import Skills from "./components/Skills/";
 import Resume from "./components/Resume/";
 import Contact from "./components/Contact/";
+import Modal from "./components/UI/Modal";
+import Backdrop from "./components/UI/Backdrop";
 import Footer from "./components/Footer/";
 
 class App extends Component {
@@ -25,7 +27,9 @@ class App extends Component {
         <Portfolio />
         <Skills />
         <Resume />
-        <Contact show={this.state.show} handleClick={this.onButtonClick} />
+        {/*<Contact show={this.state.show} handleClick={this.onButtonClick} />*/}
+        {this.state.show && <Modal show={this.state.show} handleClick={this.onButtonClick} />}
+        {this.state.show && <Backdrop show={this.state.show} handleClick={this.onButtonClick} />}
         <Footer />
       </Fragment>
     );
