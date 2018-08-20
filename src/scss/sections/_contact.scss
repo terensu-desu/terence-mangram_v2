@@ -1,4 +1,28 @@
 .contact {
+	position: relative;
+
+	&__modal {
+		width: 50vw;
+		background-color: $color-white;
+		box-shadow: 0 1rem 4rem rgba($color-black, .8);
+		z-index: 1500;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: $default-border-radius;
+		padding: 2rem 4rem;
+	}
+
+	&__backdrop {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba($color-black, .6);
+		z-index: 1000;
+	}
 
 	&__button {
 		position: fixed;
