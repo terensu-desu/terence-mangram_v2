@@ -2,7 +2,7 @@ import React from "react";
 
 import DisplayDataModule from "../../modules/DisplayDataModule";
 
-const Modal = props => {
+const Modal = () => {
 	const boxes = DisplayDataModule.getContactInfo();
 	const boxesMap = boxes.map(item => (
 		<div className="col-1-of-4">

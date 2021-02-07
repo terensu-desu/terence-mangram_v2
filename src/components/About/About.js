@@ -1,35 +1,37 @@
 import React from "react";
 
-const About = props => (
+const About = () => (
 	<div className="about" id="about">
 		<div className="heading-box">
 			<h2 className="heading-secondary">About</h2>
 		</div>
 		<div className="about__container">
 			<p className="about__text">
-				Born in Spain and raised in Florida, I've just moved to Chicago (April
-				5th!) after living and working in Japan as a public school English
-				teacher for four years. My journey as a web developer actually sparked
-				while I was busy teaching phonics and grammar full time.
+				I'm a world traveler, I've lived in Spain and Japan, and visited a handful of other countries to boot.
+				I'm a teacher, I taught English at public schools while I lived in Japan and was a teaching assist at the Northwestern's Web Developer Bootcamp in Chicago.
+				I'm a student, I'm constantly immersing myself in a subject, like when I taught myself to code through JavaScript and now as I learn Rust.
 			</p>
 			<p className="about__text">
-				The first website I created was Chubu ALT, a solution to the problem
-				English teachers have with creating or finding new material to teach
-				with. Although it started with copy and pasted HTML and CSS, I was
-				really proud of what I accomplished. Eventually it would evolve into
-				Nihon ALT - a React based app with a lot more functionality.
+				I'm a web developer based in Chicago, Illinois, an expert with React, Redux, and modern CSS. I'm a huge proponent of testing and discovery.
+				I believe a software developer should be curious and follow up that curiousity by finding answers, or more questions.
+				I have been the lead front-end developer of my current project for over 2 years, helping train up recent graduates, onboard and support offshore developers, and introduce and push maintenance of best practices.
 			</p>
 			<p className="about__text">
-				So from that point on, I was a student again. I've been building fun and
-				challenging projects and try to solve problems I imagine or have had.
-				I've learned a lot, from HTML5, CSS5, and JavaScript to React and Redux
-				to NodeJS and MongoDB, and more.
+				The first significantly used website I created was Chubu ALT, a solution to the problem English teachers have with creating or finding new material to teach with.
+				Although it started with copy and pasted HTML, CSS, and a sprinkle of PHP, I was really proud of what I accomplished. 
+				During all the copying and pasting, I said, "There must be a way to write script that does this for me on the fly."
+				I went in search of answers, but not really understanding JavaScript, I had to learn the basics of writing code and train up before DRYing out my website.
+				Eventually, all that learning would evolve into	Nihon ALT - a React based app with a lot more functionality and way, way less redundant code.
+				It's in the projects list, check it out.
 			</p>
 			<p className="about__text">
-				I am actively looking for employment in Chicago, so feel free to contact
-				me! I'd be happy to talk shop, expand on my story, chat about Japan, the
-				language, Formula 1, bouldering, tennis, video games, books, or whatever
-				you like! I'm also active in the local freeCodeCamp group.
+				So from that point on, I understand what it meant to be a constant learner. Whenever I have a challenge, the first thing I do is research.
+				Research could mean reading up on a subject, asking team members or the greater community, or simply breaking it - one of my favorite choices.
+				I've been building fun and challenging projects and try to solve problems I imagine or have had ever since.
+				My most recent accomplishments is the completion of a two year project that rewrote a huge monolithic Flex (Flash/ActionScript) and Weblogic app in React with Redux and Springboot.
+			</p>
+			<p className="about__text">
+				Feel free to reach out to me about anything. I'd be happy to talk shop, expand on my story, chat about Japan, the language, Formula 1, bouldering, tennis, video games, books, or Chicago!
 			</p>
 			<ul className="about__links-box">
 				<li className="about__item">

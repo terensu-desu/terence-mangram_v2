@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Card = props => {
-	const {
-		title,
-		tools,
-		videoLink,
-		description,
-		url
-	} = props.data;
+const Card = ({ 
+	data: { 
+			title,
+			tools,
+			videoLink,
+			description,
+			url 
+		}
+	}) => {
 
 	return (
 		<div className="card">

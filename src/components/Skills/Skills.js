@@ -2,7 +2,7 @@ import React from "react";
 import DisplayDataModule from "../../modules/DisplayDataModule";
 import List from "./List";
 
-const Skills = props => {
+const Skills = () => {
 	const { frontEnd, backEnd, tools } = DisplayDataModule.getAllSkills();
 
 	const frontEndSection = <List heading="Front-End" data={frontEnd} />

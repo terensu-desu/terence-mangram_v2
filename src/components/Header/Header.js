@@ -6,7 +6,8 @@ const Header = props => (
 			<h1 className="heading-primary">
 				<span className="heading-primary--main">Terence</span>
 				<span className="heading-primary--main">Mangram</span>
-				<span className="heading-primary--sub">Chicago based Web Developer</span>
+				<span className="heading-primary--sub">Web Developer</span>
+				<span className="heading-primary--sub">Chicago</span>
 			</h1>
 		</div>
 	</div>

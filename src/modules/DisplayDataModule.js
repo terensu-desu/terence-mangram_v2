@@ -11,17 +11,23 @@ import Redux from "../assets/images/redux.svg";
 import jQuery from "../assets/images/jquery.svg";
 
 import NodeJS from "../assets/images/nodejs.svg";
+import Springboot from "../assets/images/springio-icon.svg";
+import SQL from "../assets/images/sql.svg";
 import Express from "../assets/images/express.svg";
 import MongoDB from "../assets/images/mongodb.svg";
 import Mongoose from "../assets/images/mongoose.png";
 
 import Webpack from "../assets/images/webpack.svg";
 import Jest from "../assets/images/jest.svg";
+import TestingLibrary from "../assets/images/testing-library.png";
 import Linux from "../assets/images/linux.svg";
 import NPM from "../assets/images/npm.svg";
+import Yarn from "../assets/images/yarn.svg";
 import Git from "../assets/images/git.svg";
+import Bamboo from "../assets/images/bamboo.svg";
+import Bitbucket from "../assets/images/bitbucket.svg";
+import JIRA from "../assets/images/jira.svg";
 import GitHub from "../assets/images/github.svg";
-import Heroku from "../assets/images/heroku.svg";
 
 
 const DisplayDataModule = () => {
@@ -58,9 +64,14 @@ const DisplayDataModule = () => {
 
   const frontEnd = [
     {
-      skill: "HTML5",
-      image: HTML5,
-      url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+      skill: "React",
+      image: React,
+      url: "https://reactjs.org/"
+    },
+    {
+      skill: "Redux",
+      image: Redux,
+      url: "https://redux.js.org/"
     },
     {
       skill: "CSS3",
@@ -78,20 +89,15 @@ const DisplayDataModule = () => {
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
-      skill: "React",
-      image: React,
-      url: "https://reactjs.org/"
-    },
-    {
-      skill: "Redux",
-      image: Redux,
-      url: "https://redux.js.org/"
-    },
-    {
       skill: "jQuery",
       image: jQuery,
       url: "https://jquery.com/"
-    }
+    },
+    {
+      skill: "HTML5",
+      image: HTML5,
+      url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+    },
   ];
   
   const backEnd = [
@@ -104,6 +110,16 @@ const DisplayDataModule = () => {
       skill: "Express",
       image: Express,
       url: "https://expressjs.com/"
+    },
+    {
+      skill: "Spring Boot",
+      image: Springboot,
+      url: "https://spring.io/projects/spring-boot"
+    },
+    {
+      skill: "Oracle SQL",
+      image: SQL,
+      url: "https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html"
     },
     {
       skill: "MongoDB",
@@ -129,6 +145,11 @@ const DisplayDataModule = () => {
       url: "https://jestjs.io/"
     },
     {
+      skill: "Testing Library",
+      image: TestingLibrary,
+      url: "https://testing-library.com/"
+    },
+    {
       skill: "Linux",
       image: Linux,
       url: "https://www.linux.org/"
@@ -137,6 +158,11 @@ const DisplayDataModule = () => {
       skill: "NPM",
       image: NPM,
       url: "https://www.npmjs.com/"
+    },
+    {
+      skill: "Yarn",
+      image: Yarn,
+      url: "https://yarnpkg.com/"
     }, 
     {
       skill: "Git",
@@ -144,14 +170,24 @@ const DisplayDataModule = () => {
       url: "https://git-scm.com/"
     },
     {
+      skill: "Bamboo",
+      image: Bamboo,
+      url: "https://www.atlassian.com/software/bamboo"
+    },
+    {
+      skill: "Bitbucket",
+      image: Bitbucket,
+      url: "https://www.atlassian.com/software/bitbucket"
+    },
+    {
+      skill: "JIRA",
+      image: JIRA,
+      url: "https://www.atlassian.com/software/jira"
+    },
+    {
       skill: "GitHub",
       image: GitHub,
       url: "https://github.com/"
-    }, 
-    {
-      skill: "Heroku",
-      image: Heroku,
-      url: "https://www.heroku.com/"
     }
   ];
 

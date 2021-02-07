@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("Navigation", () => {
+xdescribe("Navigation", () => {
 
 	describe("When isAuth is defined", () => {
 		it("Renders when isAuth prop is defined", () => {

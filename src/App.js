@@ -1,39 +1,30 @@
-import React, { Component, Fragment } from 'react';
-import './App.css'; // compiled SCSS, see package.json scripts
+import React, { useState } from 'react';
+import './App.css';
 
 import Navigation from "./components/Navigation/";
 import Header from "./components/Header/";
 import About from "./components/About/";
 import Portfolio from "./components/Portfolio/";
 import Skills from "./components/Skills/";
-import Resume from "./components/Resume/";
-import Contact from "./components/Contact/";
 import Modal from "./components/UI/Modal";
 import Backdrop from "./components/UI/Backdrop";
 import Footer from "./components/Footer/";
 
-class App extends Component {
-	state = { show: false };
-	onButtonClick = () => {
-		this.setState(prevState => ({ show: !prevState.show	}));
-	};
-
-  render() {
-    return (
-      <Fragment>
-        <Navigation show={this.state.show} handleClick={this.onButtonClick} />
+const App = () => {
+  const [showModal, setShowModal] = useState(false);
+  const handleToggleModal = () => setShowModal(!showModal);
+  return (
+      <main>
+        <Navigation handleClick={handleToggleModal} />
         <Header />
         <About />
         <Portfolio />
         <Skills />
-        <Resume />
-        {/*<Contact show={this.state.show} handleClick={this.onButtonClick} />*/}
-        {this.state.show && <Modal show={this.state.show} handleClick={this.onButtonClick} />}
-        {this.state.show && <Backdrop show={this.state.show} handleClick={this.onButtonClick} />}
+        {showModal && <Modal />}
+        {showModal && <Backdrop handleClick={handleToggleModal} />}
         <Footer />
-      </Fragment>
-    );
-  }
-}
+      </main>
+  );
+};
 
 export default App;

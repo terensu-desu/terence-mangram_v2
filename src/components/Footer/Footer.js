@@ -10,8 +10,10 @@ const Footer = props => {
 					<p className="footer__text">
 						Created by <a href="http://www.terencemangram.com" className="footer__link">Terence Mangram</a>
 					</p>
-					<p className="footer__text">Tech Images from
-						<a href="http://konpa.github.io/devicon/" className="footer__link"> Devicon</a>
+					<p className="footer__text">Huge thanks for the Tech Images from
+						<a href="http://konpa.github.io/devicon/" className="footer__link"> Devicon </a>
+						and
+						<a href="https://www.vectorlogo.zone/" className="footer__link"> VectorLogoZone</a>
 					</p>
 					<p className="footer__text">Social Icons from
 						<a href="https://iconmonstr.com/" className="footer__link"> iconmonstr</a>

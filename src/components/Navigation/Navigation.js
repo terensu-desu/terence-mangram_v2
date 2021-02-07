@@ -3,7 +3,7 @@ import React from "react";
 import Link from "../Link";
 import Logo from "../../assets/images/logo.png";
 
-const Navigation = props => {
+const Navigation = ({handleClick}) => {
 	return (
 		<div className="navigation">
 			<nav className="navigation__nav">
@@ -24,7 +24,7 @@ const Navigation = props => {
 						<Link name="resume" />
 					</li>
 					<li className="navigation__item navigation__item--contact">
-						<button className="navigation__link" onClick={props.handleClick}>
+						<button className="navigation__link" onClick={handleClick}>
 							Contact
 						</button>
 					</li>
