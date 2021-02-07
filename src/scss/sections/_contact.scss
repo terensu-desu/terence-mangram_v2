@@ -2,7 +2,10 @@
 	position: relative;
 
 	&__modal {
-		width: 50vw;
+		width: 33vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		background-color: $color-white;
 		box-shadow: 0 1rem 4rem rgba($color-black, .8);
 		z-index: 1500;
@@ -12,6 +15,38 @@
 		transform: translate(-50%, -50%);
 		border-radius: $default-border-radius;
 		padding: 2rem 4rem;
+	}
+
+	&__modal-row {
+		display: flex;
+		justify-content: space-between;
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+	
+	&__modal-image {
+		height: 72px;
+		&:hover {
+			fill: $color-primary;
+		}
+	}
+
+	&__modal-image-container {
+		width: 20%;
+	}
+
+	&__modal-text-container {
+		width: 80%;
+	}
+
+	&__modal-title {
+		font-size: 1.6rem;
+		color: $color-secondary-dark
+	}
+
+	&__modal-text {
+		font-size: 1.3rem;
 	}
 
 	&__backdrop {

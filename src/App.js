@@ -6,6 +6,7 @@ import Header from "./components/Header/";
 import About from "./components/About/";
 import Portfolio from "./components/Portfolio/";
 import Skills from "./components/Skills/";
+import Resume from './components/Resume/Resume';
 import Modal from "./components/UI/Modal";
 import Backdrop from "./components/UI/Backdrop";
 import Footer from "./components/Footer/";
@@ -20,6 +21,7 @@ const App = () => {
         <About />
         <Portfolio />
         <Skills />
+        <Resume />
         {showModal && <Modal />}
         {showModal && <Backdrop handleClick={handleToggleModal} />}
         <Footer />
