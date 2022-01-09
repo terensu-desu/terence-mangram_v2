@@ -74,9 +74,9 @@ const DisplayDataModule = () => {
       url: "https://redux.js.org/"
     },
     {
-      skill: "CSS3",
-      image: CSS3,
-      url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
+      skill: "JavaScript",
+      image: JavaScript,
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
       skill: "SASS",
@@ -84,9 +84,9 @@ const DisplayDataModule = () => {
       url: "https://sass-lang.com/"
     },
     {
-      skill: "JavaScript",
-      image: JavaScript,
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      skill: "CSS3",
+      image: CSS3,
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
     },
     {
       skill: "jQuery",
@@ -97,20 +97,10 @@ const DisplayDataModule = () => {
       skill: "HTML5",
       image: HTML5,
       url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-    },
+    }
   ];
   
   const backEnd = [
-    {
-      skill: "Node.js",
-      image: NodeJS,
-      url: "https://nodejs.org/"
-    },
-    {
-      skill: "Express",
-      image: Express,
-      url: "https://expressjs.com/"
-    },
     {
       skill: "Spring Boot",
       image: Springboot,
@@ -122,6 +112,16 @@ const DisplayDataModule = () => {
       url: "https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html"
     },
     {
+      skill: "Node.js",
+      image: NodeJS,
+      url: "https://nodejs.org/"
+    },
+    {
+      skill: "Express",
+      image: Express,
+      url: "https://expressjs.com/"
+    },
+    {
       skill: "MongoDB",
       image: MongoDB,
       url: "https://www.mongodb.com/"
@@ -130,29 +130,19 @@ const DisplayDataModule = () => {
       skill: "Mongoose",
       image: Mongoose,
       url: "http://mongoosejs.com/"
-    },
+    }
   ];
 
   const tools = [
-    {
-      skill: "Webpack",
-      image: Webpack,
-      url: "https://webpack.js.org/"
-    },
-    {
-      skill: "Jest",
-      image: Jest,
-      url: "https://jestjs.io/"
-    },
     {
       skill: "Testing Library",
       image: TestingLibrary,
       url: "https://testing-library.com/"
     },
     {
-      skill: "Linux",
-      image: Linux,
-      url: "https://www.linux.org/"
+      skill: "Jest",
+      image: Jest,
+      url: "https://jestjs.io/"
     },
     {
       skill: "NPM",
@@ -175,6 +165,11 @@ const DisplayDataModule = () => {
       url: "https://www.atlassian.com/software/bamboo"
     },
     {
+      skill: "Webpack",
+      image: Webpack,
+      url: "https://webpack.js.org/"
+    },
+    {
       skill: "Bitbucket",
       image: Bitbucket,
       url: "https://www.atlassian.com/software/bitbucket"
@@ -183,6 +178,11 @@ const DisplayDataModule = () => {
       skill: "JIRA",
       image: JIRA,
       url: "https://www.atlassian.com/software/jira"
+    },
+    {
+      skill: "Linux",
+      image: Linux,
+      url: "https://www.linux.org/"
     },
     {
       skill: "GitHub",
@@ -194,7 +194,7 @@ const DisplayDataModule = () => {
   const contactBoxes = [
     {
       title: "Mail",
-      text: "Send me an email - I'm quick to respond to most things that hit my inbox.",
+      text: "Send me an email - I try to respond to most things that hit my inbox.",
       link: "mailto:tmangram@gmail.com",
       path: "M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0 1.288l-6-4.629v6.771h12v-6.771l-6 4.629z"
     },
@@ -226,13 +226,11 @@ const DisplayDataModule = () => {
 
 	const getAllProjects = () => projects;
 
-  const getAllSkills = () => {
-    return {
+  const getAllSkills = () => ({
       frontEnd: frontEnd,
       backEnd: backEnd,
       tools: tools
-    };
-  };
+  });
 
   const getContactInfo = () => contactBoxes;
 
