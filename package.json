@@ -10,7 +10,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.1.4"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/scss/index.scss src/App.css",
